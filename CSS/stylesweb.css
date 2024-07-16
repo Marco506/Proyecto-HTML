@@ -1,0 +1,42 @@
+
+.listaNav{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    position: absolute;
+    top: 5px;
+    left: 70%;
+}
+
+.logoredes{
+    width: 30px;
+    padding-left: 5px;
+}
+
+.logo{
+    width: 400px;
+    margin-left: 10%;
+}
+.navegacion{
+    width: 100%;
+}
+
+.btnInput{
+    display: flex;
+    margin-left: 70%;
+    
+}
+.content1 {
+     
+       padding: 1.5em 1.25em;   
+        display: block; 
+       color: #FFF;
+    background-color: #182951;
+    
+
+    
+}
+.listamenu{
+    text-decoration: none;
+    color: #FFF;
+}

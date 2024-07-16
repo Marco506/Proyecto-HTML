@@ -1,0 +1,392 @@
+/* 
+- Name: megammenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+:root{
+    --blanco: #ffffff;
+    --naranja1: #182951;
+    --naranja2: #D6B15F;
+    --verde1: #00853e;
+    --verde2: #8dc641;
+    --azul1: #0034A0;
+    --azul2: #00bbe4;
+    --azul3: #0090b3;
+    --azul4: #2E7F87;
+    --morado: #384256;
+    --gris: #efebea;
+    --gris2: #565656;
+    --gris3: #cccbcb;
+    --negro: #4e4e4e;
+    --amarillo: #ffdd00;
+
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Body - not related to megammenu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+    box-sizing: border-box;
+}
+
+.logo-bicentenario {max-width:105px;}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megammenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu-container {
+    background: #182951;
+    color: #FFF;
+}
+
+.menu h2 {color: #FFF; font-size: 1em; text-transform: uppercase; margin-bottom: 10px;}
+.menu h3 {font-size: 0.9em; text-transform: none; margin:0 0 3px 0;}
+
+.menu-mobile {
+    display: none;
+    padding: 20px;
+}
+
+.menu-mobile:after {
+    content: "=";
+    font-size: 3em;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.menu-dropdown-icon > li > a {text-transform: uppercase;}
+.menu-dropdown-icon .menu--main > li > a {text-transform: none;}
+
+.menu-dropdown-icon:before {
+    content: "+";
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+    color: #FFF;
+}
+
+.menu a {color: #FFF;}
+
+.menu > ul {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box;
+}
+
+.menu > ul:before,
+.menu > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul:after {
+    clear: both;
+}
+
+.menu > ul > li {
+    float: left;
+    background: #182951;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    padding: 1.5em 1.25em;
+    display: block;
+    color: #FFF;
+}
+
+.menu > ul > li.icons > a {padding: 1em 0; float: left; margin-right: 15px; width: 45px;}
+
+.menu > ul > li:hover, .menu > ul > li.active {
+    background: #D75229;
+}
+
+.menu > ul > li > ul {
+    display: none;
+    width: 100%;
+    background: #D75229;
+    padding: 20px;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li {
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+    width: 33%;
+    background: none;
+    float: left;
+}
+
+.menu > ul > li > ul > li > a {
+    color: #FFF;
+    padding: .2em 0;
+    width: 95%;
+    display: block;
+}
+
+.menu > ul > li > ul > li > ul {
+    display: block;
+    padding: 0 0 0 15px;
+    margin: 10px 0 0;
+    box-sizing: border-box;
+    list-style: circle;
+}
+
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li > ul > li {
+    float: left;
+    width: 100%;
+    padding: 0 0 5px 0;
+    margin: 0;
+    font-size: .8em;
+    list-style: disc;
+}
+
+.menu > ul > li > ul > li > ul > li a {
+    border: 0;
+    text-transform: none;
+}
+
+.menu > ul > li > ul.normal-sub {
+    width: 300px;
+    left: auto;
+    padding: 10px 20px;
+}
+
+.menu > ul > li > ul.normal-sub > li {
+    width: 100%;
+}
+
+.menu > ul > li > ul.normal-sub > li a {
+    border: 0;
+    padding: 1em 0;
+}
+
+.conozcanos {width:100% !important;}
+.conozcanos .menu > ul > li > ul > li {width:100%!important;}
+
+.item-list li, .item-list p, .item-list a{text-transform: none;}
+
+.menu > ul > li > ul > li.full {width: 100%;}
+
+.header-li ul, .full ul {list-style: circle;}
+.header-li ul li, .full ul li {float: none;}
+.header-li ul li a, .header-li ul li a:hover, .full ul li a, .full ul li a:hover, .bullet{background: transparent url(../img/bullet-m.png) no-repeat 3px 7px; padding: 3px 0 3px 15px; display: block;}
+.header-li ul li a:hover, .full ul li a:hover{text-decoration: underline;}
+
+.region-menu-beneficiarios ul li {list-style: none;}
+
+ul.item-list, div.item-list ul {margin-bottom: 20px;}
+ul.item-list {padding-left: 15px;}
+div.item-list ul {padding-left: 0;}
+
+li.banners {width: 100% !important; margin-top: 25px !important; padding-top:10px; border-top: var(--naranja2) 1px solid; display: inline-block;}
+
+#consulta .btn {
+    background: #D5CCC9 url(../img/ingresar.png) no-repeat right;
+    padding: 10px 26px 10px 5px;
+    display: block;
+    border-radius: 0;
+    color: var(--gris2);
+    font-weight: bold;
+}
+
+.views-field-field-tipo-de-beneficio-1 span {font-size: 14px;}
+
+span.id-tax-50 {
+    background: url(../img/icn-categoria-comunidades.png) no-repeat left;
+    padding: 1px 0px 0px 35px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 4px 5px;
+    display: block;
+}
+span.id-tax-51 {
+    background: url(../img/icn-categoria-educacion.png) no-repeat left;
+    padding: 1px 0px 0px 35px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 4px 5px;
+    display: block;
+}
+span.id-tax-52 {
+    background: url(../img/icn-categoria-emprendimientos.png) no-repeat left;
+    padding: 1px 0px 0px 35px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 4px 5px;
+    display: block;
+}
+span.id-tax-53 {
+    background: url(../img/icn-categoria-terreno.png) no-repeat left;
+    padding: 1px 0px 0px 35px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 4px 5px;
+    display: block;
+}
+span.id-tax-49 {
+    background: url(../img/icn-categoria-familia.png) no-repeat left;
+    padding: 1px 0px 0px 35px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 4px 5px;
+    display: block;
+}
+span.ben.item {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.menu .button {font-weight: bold;text-align: center;background: #D5CCC9; padding: 8px 12px; color: #575657;display: block; clear: both; margin-bottom: 8px; min-width: 200px;}
+.menu .consulta-nombre, .menu .consulta-descargar{padding-left: 40px;}
+.menu .consulta-nombre{background: #D5CCC9 url(../img/search-icon.jpg) no-repeat 8px 2px;}
+.menu .consulta-descargar{background: #D5CCC9 url(../img/download-icon.jpg) no-repeat 6px 2px;}
+.menu .ingresar{background: #D5CCC9 url(../img/in-icon.jpg) no-repeat 165px 2px; text-align: center;}
+
+.menu .videos-fotos, .menu .videos {background: #FFF; padding-bottom: 15px; display:inline-block;}
+.menu .videos {min-height: 305px;}
+.menu .videos h2 {color: #D75229; padding-left: 15px;}
+.menu .videos h3 a{color: #666; padding-bottom: 5px;}
+.videos-fotos h2 {color: #D75229;}
+.videos-fotos h3 {padding-bottom:8px; color: #666; font-size: 1.1em; font-family: "Oxygen";}
+.videos-fotos a {text-transform:none;}
+.region-menu-otros-videos {padding-top: 15px;}
+.videos-fotos h2.block-title {text-transform: none;}
+.region-menu-comunicados-avisos .form-group {padding: 10px; background: #BC4220;}
+.region-menu-comunicados-avisos .more-link.more-link{padding: 10px 0 0 0;}
+.videos-fotos .view a{color: #575756; font-size:0.9em;}
+.videos-fotos .field-content img, .videos img {margin-bottom: 10px; border: #CCC 1px solid;}
+#block-views-recursos-block-6 img {float: left; padding:3px;}
+
+.region-menu-mapas-estadisticas a img {margin-bottom: 20px;}
+
+.videos-fotos .more-link.form-group a, .videos .more-link.form-group a {background: var(--morado); padding: 4px 10px; color: #FFF; text-transform: uppercase;}
+.videos-fotos .more-link.form-group a {}
+.videos .more-link.form-group a {float: right;}
+
+.vf-1 .views-row {display: inline-block;}
+
+.recursos-prensa .title.news, .recursos-prensa .date.news {text-transform: none;}
+.recursos-prensa .date.news time{font-size:0.9em; color:var(--blanco);}
+
+aside nav {clear: both;}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 959px) {
+    .menu-container {
+        width: 100%;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-dropdown-icon:before {
+        display: block;
+    }
+    .menu > ul {
+        display: none;
+    }
+    .menu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu > ul > li a {
+        width: 100%;
+        display: block;
+    }
+    .menu > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul.normal-sub {
+        width: 100%;
+    }
+    .menu > ul > li > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .menu > ul > li > ul > li:first-child {
+        margin: 0;
+    }
+    .menu > ul > li > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul > li > ul > li {
+        float: none;
+    }
+    .menu .show-on-mobile {
+        display: block;
+    }
+}
+@media (min-width: 768px)  {
+	.conozcanos ul.navbar-nav, ul.menu--areas-regionales {column-count: 3;}
+	li.banners img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px)  {
+    .menu > ul > li > a {
+        padding: 1em;
+    }
+	li.banners {text-align:center;}
+	
+	.banners h2 {display:none;}
+	.banners img {display:inline-block; max-width:260px; margin-bottom:15px;}
+	
+	.menu .videos-fotos, .menu .videos {margin-top:15px;}
+}
