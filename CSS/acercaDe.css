@@ -67,7 +67,7 @@
     
    
     width: 20%;
-    margin-top: -93%;
+    margin-top: -110%;
     
     margin-left: 70%;
     
@@ -121,7 +121,7 @@
 
   .conpar{
     width: 30%;
-    margin-top: 10%;
+    margin-top: 20%;
     
     margin-left: 10%;
   }
@@ -129,6 +129,23 @@
     background-color: #D6B15F;
     color: #e0d3d3;
   }
+
+  .stilop{
+    text-align: justify;
+    line-height: 150%;
+
+    font-family: "Oxygen";
+    font-size: 17px;
+}
+.lislinks{
+  text-align: justify;
+    line-height: 150%;
+
+    font-family: "Oxygen";
+    font-size: 17px;
+
+}
+  
   
 
 
