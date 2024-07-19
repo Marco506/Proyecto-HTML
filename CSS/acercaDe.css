@@ -1,0 +1,138 @@
+.listaNav{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    position: absolute;
+    top: 5px;
+    left: 70%;
+}
+
+.logoredes{
+    width: 30px;
+    padding-left: 5px;
+}
+
+.logo{
+    width: 400px;
+    margin-left: 10%;
+}
+
+.navegacion{
+    width: 100%;
+}
+
+.btnInput{
+    display: flex;
+    margin-left: 70%;
+    
+}
+.navBarra2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+    background-color: #182951;
+  }
+  
+  .navBarra2 > ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  .navBarra2 > ul > li{
+    margin: 20px;
+  }
+  
+  .navBarra2 > ul > li > a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navBarra2 > ul > li:hover{
+    background-color: #ec6a3b;
+    min-height: 20px;
+    
+  }
+  .contPrin{
+    width: 57%;
+    
+   
+    margin-left: 5%;
+    
+}
+
+    .contlinks{
+
+    
+   
+    width: 20%;
+    margin-top: -93%;
+    
+    margin-left: 70%;
+    
+
+ }
+ .conblo{
+  
+  width: 37%;
+  
+  margin-left: 68%;
+
+ }
+
+
+
+
+
+
+
+
+ .conFinal{
+  display: flex; justify-content: left;
+    background-color: #182951;
+  }
+  .contfooter{
+    display: flex;
+    
+  }
+  .lisfoot > li{
+  width: 40px;
+  display: flex;
+  padding: 1%;
+  
+  }
+  
+  .lisfoot{
+    display: flex;
+  
+  }
+  
+  .contParr, .central, .Oficinas{
+    width: 40%;
+    color: #e0d3d3;
+    
+  }
+  .conFinal{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .conpar{
+    width: 30%;
+    margin-top: 10%;
+    
+    margin-left: 10%;
+  }
+  .parr2{
+    background-color: #D6B15F;
+    color: #e0d3d3;
+  }
+  
+
+
+
+
+    
+  

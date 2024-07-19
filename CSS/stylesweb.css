@@ -26,23 +26,35 @@
     margin-left: 70%;
     
 }
-.content1 {
-     
-       padding: 1.5em 1.25em;   
-        display: block; 
-       color: #FFF;
-    background-color: #182951;
-    
-
-    
-}
-.listamenu{
-    text-decoration: none;
-    color: #FFF;
-}
-
-
   
+.navBarra2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 50px;
+  background-color: #182951;
+}
+
+.navBarra2 > ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navBarra2 > ul > li{
+  margin: 20px;
+}
+
+.navBarra2 > ul > li > a{
+  text-decoration: none;
+  color: white;
+}
+
+.navBarra2 > ul > li:hover{
+  background-color: #ec6a3b;
+  min-height: 20px;
+  
+}
 
  .carousel {
     width: 100%;
@@ -179,4 +191,100 @@ width: 100%;
  display: flex;
  margin-left: 30%;
 }
+.titleV{
+  background-color: #efebea;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 4%;
+  width: 60%;
+  
+}
+.contVideo{
+  display: flex;
+  justify-content: space-between;
+  background-color: #efebea;
+  padding: 10%;
+}
+.Puente {
+  
+  width: 25%;
+
+}
+.prf{
+  
+  text-align: center;
+  font-family: "Oxygen";    font-size: 15px; line-height: 1.42857143;
+  width: 75%;
+}
+.conttresvideos{
+  display: flex;
+  border: 1px solid black;
+}
+.vids > td{
+
+  justify-content: space-between;
+ 
+width: 80%; 
+
+}
+/*
+.contBloques{
+  display: flex;
+  
+  background-color: #D6B15F;
+  height: 110px;
+}
+,.contBloques > title1 {
+  position: absolute;
+  display: flex;
+}
+,.contBloques > 
+//
+*/
+
+.block > h3{
+  color: aliceblue;
+  display: flex;
+  justify-items: center;
+}
+
+.block{
+  display: flex;
+
+}
+.contBloques{
+  display: flex;
+  background-color: #ec6a3b;
+  
+}
+.conFinal{
+display: flex; justify-content: left;
+  background-color: #182951;
+}
+.contfooter{
+  display: flex;
+  
+}
+.lisfoot > li{
+width: 40px;
+display: flex;
+padding: 1%;
+
+}
+
+.lisfoot{
+  display: flex;
+
+}
+
+.contParr, .central, .Oficinas{
+  width: 40%;
+  color: #e0d3d3;
+  
+}
+.conFinal{
+  width: 80%;
+  margin-left: 10%;
+}
+
 

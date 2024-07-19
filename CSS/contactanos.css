@@ -1,0 +1,117 @@
+.listaNav{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    position: absolute;
+    top: 5px;
+    left: 70%;
+}
+
+.logoredes{
+    width: 30px;
+    padding-left: 5px;
+}
+
+.logo{
+    width: 400px;
+    margin-left: 10%;
+}
+
+.navegacion{
+    width: 100%;
+}
+
+.btnInput{
+    display: flex;
+    margin-left: 70%;
+    
+}
+.navBarra2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+    background-color: #182951;
+  }
+  
+  .navBarra2 > ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  .navBarra2 > ul > li{
+    margin: 20px;
+  }
+  
+  .navBarra2 > ul > li > a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navBarra2 > ul > li:hover{
+    background-color: #ec6a3b;
+    min-height: 20px;
+}
+
+
+.conult{
+  
+ background-color: #182951;
+ margin-top: 1%;
+}
+
+.action{
+  font-size: 30px;
+justify-content: center;
+margin-left: 10%;
+color: #e0d3d3;
+}
+
+
+  
+.imgFin{
+  margin-left: 60%;
+  margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
+.conFinal{
+  display: flex; justify-content: left;
+    background-color: #182951;
+    width: 100%;
+  }
+  .contfooter{
+    display: flex;
+    width: 100%;
+  }
+  .lisfoot > li{
+  width: 40px;
+  display: flex;
+  padding: 1%;
+  
+  }
+  
+  .lisfoot{
+    display: flex;
+  
+  }
+  
+  .contParr, .central, .Oficinas{
+    width: 40%;
+    color: #e0d3d3;
+    
+  }
+  .conFinal{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+
